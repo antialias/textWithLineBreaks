@@ -7,7 +7,7 @@
                 var ret = "";
                 $(n).contents().each(function (i, c) {
                     var content = "";
-                    if (c.nodeType === window.Node.TEXT_NODE) {
+                    if (c.nodeType === 3) {
                         content = $(c).text();
                         onnewline = false;
                     } else {
